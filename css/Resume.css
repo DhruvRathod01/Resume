@@ -1,0 +1,129 @@
+*
+{
+    width: 100%;
+    font-weight: 500;
+}
+body
+{
+  background-color: gold;
+}
+.main
+{
+  height: 100px;
+  font-family: "Lucida Console", "Courier New", ;
+  width: 100%;
+}
+.col-sm-3 
+{
+  background-color: #89ABE3FF;
+  color: #FCF6F5FF;
+}
+.col-sm-7
+{
+  background-color: #FCF6F5FF;
+  color: Blue;
+}
+.responsive {
+  width: 50%;
+  height: auto;
+  border : 2px solid red;
+  border-radius:50%;
+}
+.col-sm-8 ::selection
+{
+  background-color: #89ABE3FF;
+  color: #FCF6F5FF;
+}
+.col-sm-4 ::selection
+{
+  background-color: #FCF6F5FF;
+  color: #89ABE3FF;
+}
+table
+{
+  border-spacing: 2px;
+  padding:30px;
+  font-size: 20px;
+  color: #FCF6F5FF;
+}
+.span
+{
+  margin: 400px;
+  margin-bottom: 400px;
+  margin-top: 400px;
+}
+.navbar
+{
+  background-color: #89ABE3FF;
+}
+
+
+
+
+.experience {
+  width:60%;
+  float:left;
+  position:relative;
+  color: Blue;
+  font-weight:300;
+  min-height:100%;
+  min-height:100vh;
+} 
+h3.experience-title {
+    color:Blue;
+    text-align:left;
+    text-transform:uppercase;
+    font-size:1.2em;
+    margin-bottom:20px;
+    font-weight:400;
+  }
+  .company-wrapper {
+    width:30%;
+    float:left;
+    text-align:left;
+    padding-right:5%;
+    margin-bottom:60px; 
+  }
+  .job-wrapper {
+    width:70%;
+    float:left;
+    text-align:left;
+    padding-right:5%;
+    margin-bottom:60px;
+  }
+  .experience-title {
+      color:Blue;
+      margin-bottom:15px;;
+    }
+
+.section-padding {
+ padding:60px 60px 40px 40px;
+}
+
+.section-wrapper {
+  width:50%;
+  float:left;
+  text-align:left;
+  color:Blue;
+  font-weight:300;
+  margin-bottom:20px;
+  &:nth-child(3){ 
+    padding-right:8%;
+  }
+}
+  h3.section-title {
+    color:Blue;
+    text-align:left;
+    text-transform:uppercase;
+    font-size:1.2em;
+    margin-bottom:20px;
+    font-weight:400;
+  }
+#skill
+  {
+    visibility: hidden;
+  }
+#project
+  {
+    visibility: hidden;
+  }
