@@ -3,7 +3,7 @@
   <title> Resume </title>
 <link href="./css/Resume.css" rel="stylesheet"></link>
 <link href="./css/bootstrap.min.css" rel="stylesheet"></link>
-<script src="./js/Resume.js"></script>
+<!-- <script src="./js/Resume.js"></script> -->
 </head>  
 <body>
   <br>
@@ -50,9 +50,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link" href="#" onclick="ed()">Education</a>
-            <a class="nav-link" href="#" onclick="skl()">Skill</a>
-            <a class="nav-link" href="#" onclick="abt()">Project</a>
+            <a class="nav-link" id="ed" href="#" onclick="ed()">Education</a>
+            <a class="nav-link" id="skl" href="#" onclick="skl()">Skill</a>
+            <a class="nav-link" id="prj" href="#" onclick="abt()">Project</a>
           </div>
         </div>
       </div>
@@ -119,7 +119,33 @@
               </div>
             </div>
 
+            <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+            <script>
+              $(document).ready(function(){
+                
+                  document.getElementById("skill").style.display = "none" ;
+                  document.getElementById("project").style.display = "none" ;
 
+                $("#ed").click(function(){
+                  document.getElementById("education").style.display = "block" ;
+                  document.getElementById("skill").style.display = "none" ;
+                  document.getElementById("project").style.display = "none" ;
+
+                })
+                $("#skl").click(function(){
+                  document.getElementById("education").style.display = "none" ;
+                  document.getElementById("skill").style.display = "block" ;
+                  document.getElementById("project").style.display  = "none" ;
+
+                })
+                $("#prj").click(function(){
+                  document.getElementById("education").style.display = "none" ;
+                  document.getElementById("skill").style.display = "none" ;
+                  document.getElementById("project").style.display = "block" ;
+
+                })
+                });
+</script>        
           
 
           <div id="project" class="project">
